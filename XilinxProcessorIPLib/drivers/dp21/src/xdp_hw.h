@@ -41,7 +41,9 @@
 #define XDP_HW_H_
 
 /***************************** Include Files **********************************/
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 #include "xil_io.h"
 
 /************************** Constant Definitions ******************************/
@@ -3358,6 +3360,8 @@
 	XDp_TxGetDispIdTdtHLoc(Tdt))
 
 #endif /* XPAR_XDPTXSS_NUM_INSTANCES */
-
+#ifdef __cplusplus
+}
+#endif
 #endif /* XDP_HW_H_ */
 /** @} */

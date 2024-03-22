@@ -180,6 +180,8 @@ void XI2s_Rx_SetAesChStat(u32 I2srx_SrcBuf[], u8 I2srx_DstBuf[]);
 /************************** Variable Definitions *****************************/
 
 /************************** Function Definitions *****************************/
-
+#ifdef __cplusplus
+}
+#endif
 #endif /*XI2SRX_CHSTS_H*/
 /** @} */
