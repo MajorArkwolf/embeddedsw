@@ -1044,7 +1044,7 @@ u32 XV_tpg_Get_dpYUVCoef(XV_tpg *InstancePtr) {
  * *
  * ******************************************************************************/
 
-void XV_tpg_Set_Interlaced(XV_tpg *InstancePtr, _Bool Data) {
+void XV_tpg_Set_Interlaced(XV_tpg *InstancePtr, u8 Data) {
     u32 Reg;
 
     Xil_AssertVoid(InstancePtr != NULL);
@@ -1067,7 +1067,7 @@ void XV_tpg_Set_Interlaced(XV_tpg *InstancePtr, _Bool Data) {
  * * @return None
  * *
  * ******************************************************************************/
-void XV_tpg_Set_Polarity(XV_tpg *InstancePtr, _Bool Data) {
+void XV_tpg_Set_Polarity(XV_tpg *InstancePtr, u8 Data) {
     u32 Reg;
 
     Xil_AssertVoid(InstancePtr != NULL);
