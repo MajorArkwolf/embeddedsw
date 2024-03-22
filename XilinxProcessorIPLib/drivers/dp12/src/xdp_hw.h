@@ -38,7 +38,9 @@
 #ifndef XDP_HW_H_
 /* Prevent circular inclusions by using protection macros. */
 #define XDP_HW_H_
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 /***************************** Include Files **********************************/
 
 #include "xil_io.h"
@@ -2829,6 +2831,8 @@
 	XDp_TxGetDispIdTdtHLoc(Tdt))
 
 #endif /* XPAR_XDPTXSS_NUM_INSTANCES */
-
+#ifdef __cplusplus
+}
+#endif
 #endif /* XDP_HW_H_ */
 /** @} */

@@ -358,7 +358,9 @@
 #ifndef XDP_H_
 /* Prevent circular inclusions by using protection macros. */
 #define XDP_H_
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 /******************************* Include Files ********************************/
 
 #include "xil_assert.h"
@@ -1496,6 +1498,8 @@ void XDp_RxAllocatePayloadStream(XDp *InstancePtr);
 					XDp_SbMsgLinkAddressReplyDeviceInfo
 #define XDp_TxSbMsgLinkAddressReplyPortDetail \
 					XDp_SbMsgLinkAddressReplyPortDetail
-
+#ifdef __cplusplus
+}
+#endif
 #endif /* XDP_H_ */
 /** @} */
