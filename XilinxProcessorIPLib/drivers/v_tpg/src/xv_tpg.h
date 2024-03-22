@@ -216,8 +216,8 @@ void XV_tpg_Set_dpDynamicRange(XV_tpg *InstancePtr, u32 Data);
 u32 XV_tpg_Get_dpDynamicRange(XV_tpg *InstancePtr);
 void XV_tpg_Set_dpYUVCoef(XV_tpg *InstancePtr, u32 Data);
 u32 XV_tpg_Get_dpYUVCoef(XV_tpg *InstancePtr);
-void XV_tpg_Set_Interlaced(XV_tpg *InstancePtr, _Bool Data);
-void XV_tpg_Set_Polarity(XV_tpg *InstancePtr, _Bool Data);
+void XV_tpg_Set_Interlaced(XV_tpg *InstancePtr, u8 Data);
+void XV_tpg_Set_Polarity(XV_tpg *InstancePtr, u8 Data);
 u32 XV_tpg_Get_fieldId(XV_tpg *InstancePtr);
 
 void XV_tpg_InterruptGlobalEnable(XV_tpg *InstancePtr);
